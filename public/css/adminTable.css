@@ -1,0 +1,78 @@
+table{
+	-webkit-user-select: none;  
+  	-moz-user-select: none;    
+  	-ms-user-select: none;      
+  	user-select: none;
+	cursor: default;
+}
+
+th{
+	border: hidden;
+	text-align: center;
+	background-color: #00CCCC;
+	color: #CCF5FF;
+}
+
+td{
+	border: hidden;
+	text-align: center;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+td:hover{
+	color: #FFCC99;
+}
+
+.colcheck{
+	width: 30px;
+}
+
+.colnombre{
+	width: 300px;
+}
+
+.colemail{
+	width: 250px;
+}
+
+.coleliminar{
+	cursor: pointer;
+}
+
+.coleliminar:hover{
+	color: #FFCC99;
+}
+
+.oculto{
+	display: none;
+}
+
+#id{
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+	width: 400px;
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	background-color: #CCF5FF;
+	padding: 40px;
+	border: solid;
+	border-radius: 10px;
+}
+
+#id div p{
+	text-align: left;
+}
+
+#showUser{
+	text-align: right;
+	cursor: pointer;
+}
+
+#showUser
+:hover{
+	color: #FFCC99;
+}

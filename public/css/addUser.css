@@ -1,0 +1,48 @@
+#addUser{
+	width: 400px;
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	background-color: #CCF5FF;
+	color: #00CCCC;
+	padding: 40px;
+	border: solid;
+	border-radius: 10px;
+	text-align: right;
+}
+
+#addUser #aceptar{
+	margin-right: 150px;
+	margin-top: 20px;
+}
+
+#cerrar{
+	text-align: right;
+	cursor: pointer;
+}
+
+#cerrar:hover{
+	color: #FFCC99;
+}
+
+#tableAdd tr td{
+	background-color: #CCF5FF;
+}
+
+#tableAdd tr td:hover{
+	color: #00CCCC;
+}
+
+#agregar{
+	cursor: pointer;
+}
+
+#dv{
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+    width: 10px;
+    pointer-events: none;
+    cursor: default;
+}

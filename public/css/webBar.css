@@ -1,0 +1,39 @@
+#bar{
+	width: 200px;
+	background: #CCF5FF;
+	top: 150px;
+	left: 30px;
+	position: absolute;
+}
+
+#login{
+}
+
+#item{
+}
+
+#item ul{
+	list-style-type: none;
+}
+
+#item ul li{
+	font-family: serif;
+	width: 100px;
+	border-bottom: 1px solid #CCF5FF;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#item ul li:hover{
+	color: #FFCC99;
+}
+
+.itemBar{
+	text-align: center;
+	background-color: #00CCCC;
+	margin: 10px;
+}
+
+.elem{
+	margin: 10px;
+}

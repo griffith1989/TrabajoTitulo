@@ -1,0 +1,30 @@
+#avatar{
+  top: 20px;
+  right: 15px;
+  width: 150px;
+  height: 80px;
+  color: #00CCCC;
+  background-color: #CCF5FF;
+  border: 5px solid #00CCCC;
+  padding: 5px;
+  position: absolute;
+}
+
+#imgAvatar{
+  top:10px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+
+#usuario{
+  top: 0px;
+  left: 85px;
+  position: absolute;
+}
+
+#salir{
+  top: 45px;
+  left: 100px;
+  position: absolute;
+}

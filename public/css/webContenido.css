@@ -1,0 +1,29 @@
+#contenido{
+	width: 740px;
+	margin: 10px;
+	background-color: #CCF5FF;
+	padding: 30px;
+	color: #00CCCC;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.noticias{
+	background-color: #000;
+	color: #fff;
+	margin: 10px;
+}
+
+.noticias img{
+	width: 400px;
+	height: 200px;
+}
+
+.titular{
+}
+
+.foto{
+}
+
+.noticia{
+}

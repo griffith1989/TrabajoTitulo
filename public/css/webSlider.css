@@ -1,0 +1,48 @@
+.slider{
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-left: 250px;
+}
+
+.sElem{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: none;
+}
+
+.sVisible{
+	display: block;
+}
+
+#elem1{
+	background-image: url(http://www.fondosya.com/wallpapers/dibujo_de_un_paisaje_de_nevados-1920x1200.jpg);
+	background-size: 100% 100%;
+}
+
+#elem2{
+	background-image: url(http://www.fotosyfondos.com/wp-content/uploads/2012/10/Paisajes-Bonitos.jpg);
+	background-size: 100% 100%;
+}
+
+#elem3{
+	background-image: url(http://www.fondosypantallas.com/wp-content/uploads/2012/08/ad10941606819.jpg);
+	background-size: 100% 100%;
+}
+
+#elem4{
+	background-image: url(http://1.bp.blogspot.com/-rd7MJWGJsxQ/TaS5-sr8U1I/AAAAAAAACw4/WrFd1tsrmRs/s1600/paisajes+hermosos+del+mundo2.jpg);
+	background-size: 100% 100%;
+}
+
+#elem5{
+	background-image: url(http://elblogverde.com/wp-content/uploads/2013/01/Paisajes-naturales.jpg);
+	background-size: 100% 100%;
+}
+
+#elem6{
+	background-image: url(http://www.fotos-top.com/items/paisajes-4198.jpg);
+	background-size: 100% 100%;
+}

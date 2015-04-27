@@ -1,0 +1,19 @@
+#rightBar{
+  	width: 200px;
+  	height: 1000px;
+	background: #CCF5FF;
+	top: 150px;
+	left: 1090px;
+	position: absolute;
+	text-align: center;
+}
+
+#itemNoticia{
+	list-style-type: none;
+	background-color: #00CCCC;
+	cursor: pointer;
+}
+
+#itemNoticia:hover{
+	color: #FFCC99;
+}

@@ -1,0 +1,38 @@
+#cabecera{
+	text-align: center;
+	background-color: #CCF5FF;
+	padding : 10px;
+}
+
+#secciones li{
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+	margin: 70px;
+	font-family: serif;
+	border-left: 1px solid #00CCCC;
+	border-right: 1px solid #00CCCC;
+	cursor: pointer;
+}
+
+#secciones li:hover{
+	color: #FFCC99;
+}
+.margen{
+	background: #00CCCC;
+	height: 30px;
+	text-align: right;
+}
+
+.margen a{
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.margen a:hover{
+	color: #FFCC99;
+}
+
+a:link{
+	text-decoration:none;
+}

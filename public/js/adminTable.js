@@ -81,7 +81,7 @@ $(document).on('ready', function(){
 
         $('#id').toggle(1000);
 
-        $('#id #r_nombre').html($('#userTable').find('tr').eq(fila+1).find('td').eq(5).text());
+        $('#id #user').html($('#userTable').find('tr').eq(fila+1).find('td').eq(5).text());
         $('#id #r_rut').html($('#userTable').find('tr').eq(fila+1).find('td').eq(6).text());
         $('#id #r_repcod').html($('#userTable').find('tr').eq(fila+1).find('td').eq(7).text());
         $('#id #r_ncuota').html($('#userTable').find('tr').eq(fila+1).find('td').eq(8).text());

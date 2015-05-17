@@ -18,9 +18,23 @@ Route::get('/', function(){
 
 Route::get('regreso', function(){
 
+	return View::make('home/user/userIndex');
+});
+
+Route::get('regresoAdmin', function(){
+
 	$usuarios = User::all();
 
-	return View::make('home/adminIndex')->with('usuarios', $usuarios);
+	return View::make('home/admin/adminIndex')->with('usuarios', $usuarios);
+});
+
+Route::get('noticiasAdmin', function(){
+
+	$consulta = 'SELECT * FROM `noticias` order by updated_at desc';
+
+	$noticias = DB::select($consulta);
+
+	return View::make('home/admin/adminNews')->with('noticias', $noticias);
 });
 
 Route::get('logout',function()

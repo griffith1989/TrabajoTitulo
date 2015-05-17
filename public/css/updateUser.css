@@ -1,4 +1,4 @@
-#addUser{
+#updateUser{
 	width: 400px;
 	position: absolute;
 	top: 200px;
@@ -11,21 +11,26 @@
 	text-align: right;
 }
 
-#addUser #aceptar{
+#upAvatar{
+	width: 70px;
+  	height: 70px;
+}
+
+#updateUser #aceptar{
 	margin-right: 150px;
 	margin-top: 20px;
 }
 
-#cerrar{
+#updateClose{
 	text-align: right;
 	cursor: pointer;
 }
 
-#tableAdd tr td{
+#updateTable tr td{
 	background-color: #CCF5FF;
 }
 
-#tableAdd tr td:hover{
+#updateTable tr td:hover{
 	color: #00CCCC;
 }
 
@@ -33,7 +38,7 @@
 	cursor: pointer;
 }
 
-#dv{
+#upDv{
 	-webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;

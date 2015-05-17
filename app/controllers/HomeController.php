@@ -43,7 +43,7 @@ class HomeController extends BaseController {
 			}
 			else{
 				$usuarios = User::all();
-				return View::make('home.adminIndex')->with('usuarios', $usuarios);
+				return Redirect::to('admin');
 			}
 		}
 		else

@@ -1,14 +1,16 @@
-<?php $__env->startSection('cabecera'); ?>
+<?php $__env->startSection('cabecera'); ?> 
 	<link rel="stylesheet" type="text/css" href="css/adminTable.css">
 	<link rel="stylesheet" type="text/css" href="css/addUser.css">
+	<link rel="stylesheet" type="text/css" href="css/addNews.css">
 	<script type="text/javascript" src="js/adminTable.js"></script>
 	<script type="text/javascript" src="js/addUser.js"></script>
+	<script type="text/javascript" src="js/addNews.js"></script>
 <?php $__env->stopSection(); ?>
 
-<?php $__env->startSection('barra'); ?>
+<?php $__env->startSection('agregarUsuario'); ?>
 	<?php echo Form::open(array('id' => 'addUser', 'method' => 'POST', 'url' => 'crear', 'files' => true)); ?>
 
-		<p id="cerrar">cerrar</p>
+		<img id="cerrar" src="imgs/cerrar.png">
 		<table id="tableAdd">
 			<tr>
 				<td>
@@ -181,18 +183,19 @@
 		</table>
 
 
-  		<?php echo Form::submit('Registrarse'); ?>
-
+  		<input type="image" src="imgs/aceptar.png">
   	<?php echo form::close(); ?>
 
 <?php $__env->stopSection(); ?>
+
+
 
 <?php $__env->startSection('contenido'); ?>
 	<table id="userTable">
 	    <thead>
 	    	<tr>
-	    			<th class="colcheck" class="filtitulo"><input type=checkbox id="checkall"></th>
-						<th class="colusuario" class="filtitulo">Usuario</th>
+	    		<th class="colcheck" class="filtitulo"><input type=checkbox id="checkall"></th>
+				<th class="colusuario" class="filtitulo">Usuario</th>
 	        	<th class="colnombre" class="filtitulo">Nombre</th>
 	        	<th class="colemail" class="filtitulo">E-Mail</th>
 	    	</tr>
@@ -202,19 +205,20 @@
 				<?php if($usuario->id != Auth::user()->id || $usuario->admin != true): ?>
 				    <tr>
 				    	<td class="colcheck"><input type=checkbox class="checkbox"></td>
-								<td class="colusuario"><?php echo $usuario->user; ?></td>
-				        <td class="colnombre" id="nombre"><?php echo $usuario->p_nombre; ?> <?php echo $usuario->p_apellido; ?> <?php echo $usuario->s_apellido; ?></td>
+						<td class="colusuario"><?php echo $usuario->user; ?></td>
+				        <td class="colnombre" id="nombre"><img src="imgs/abrir.png"> <?php echo $usuario->p_nombre; ?> <?php echo $usuario->p_apellido; ?> <?php echo $usuario->s_apellido; ?></td>
 				        <td class="colemail"><?php echo $usuario->email; ?></td>
-				        <td class="coleditar">Editar</td>
+				        <td class="coleditar">
+							<input type="image" src="imgs/modificar.png">
+				        </td>
 				        <td class="coleliminar">
-									<?php echo Form::open(array('id' => 'deleteUser', 'method' => 'POST', 'url' => 'eliminar')); ?>
+							<?php echo Form::open(array('id' => 'deleteUser', 'method' => 'POST', 'url' => 'eliminar')); ?>
 
-										<?php echo Form::submit('Eliminar'); ?>
+								<input type="image" src="imgs/eliminar.png">
+								<input type="hidden" name="id2" value=<?php echo $usuario->id; ?>>
+							<?php echo form::close(); ?>
 
-										<input type="hidden" name="id2" value=<?php echo $usuario->id; ?>>
-									<?php echo form::close(); ?>
-
-								</td>
+						</td>
 				        <td class="oculto">Nombre : <?php echo $usuario->p_nombre; ?> <?php echo $usuario->s_nombre; ?> <?php echo $usuario->p_apellido; ?> <?php echo $usuario->s_apellido; ?></td>
 				        <td class="oculto">Rut : <?php echo $usuario->rut; ?> - <?php echo $usuario->dv; ?></td>
 				        <td class="oculto">Rep Codigo : <?php echo $usuario->rep_codigo; ?></td>
@@ -228,7 +232,7 @@
     	</tbody>
   	</table>
 
-  	<p id="agregar">Agregar Usuario</p>
+  	<input id="agregar" type="image" src="imgs/agregar.png">
 
 
   	<div id="id">
@@ -260,4 +264,47 @@
   	<p><?php echo $errors->first('descripcion'); ?></p>
 <?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('extraRightBar'); ?>
+  		<nav>
+  			<ul>
+  				<li id="itemNoticia">Agregar Noticia</li>
+  			</ul>
+  		</nav>
+
+ <?php $__env->stopSection(); ?>
+
+<?php echo Form::open(array('id' => 'addNews', 'method' => 'POST', 'url' => 'agregar', 'files' => true)); ?>
+
+  	<div>
+  	<img id="cerrarNot" src="imgs/cerrar.png">
+  		<nav>
+  			<ul>
+  				<li>
+  					<?php echo Form::label('titulo','Titulo de la Noticia'); ?>
+
+  					<?php echo Form::text('titulo'); ?>
+
+  				</li>
+  				<li>
+  					<?php echo Form::label('fotoNoticia','Imagen de la Noticia'); ?>
+
+  					<?php echo Form::file('fotoNoticia'); ?>
+
+  				</li>
+  				<li>
+  					<?php echo Form::label('noticia','Cuerpo de la Noticia'); ?>
+
+  				</li>
+  				<li>
+  					<?php echo Form::textarea('noticia'); ?>
+
+  				</li>
+  				<li>
+  					<input type="image" src="imgs/aceptar.png">
+  				</li>
+  			</ul>
+  		</nav>
+  		</div>
+  <?php echo form::close(); ?>  	
+  
 <?php echo $__env->make('layouts.webIntra', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

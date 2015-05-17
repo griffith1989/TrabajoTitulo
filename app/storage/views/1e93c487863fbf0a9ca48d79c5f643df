@@ -11,7 +11,6 @@
 	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="js/webSlider.js"></script>
 	<script type="text/javascript" src="js/webBar.js"></script>
-
 </head>
 <body>
 	<div id="cabecera">

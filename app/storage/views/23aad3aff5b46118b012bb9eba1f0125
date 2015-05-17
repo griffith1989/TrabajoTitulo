@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>pagina</title>
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/utem.png">
 	<link rel="stylesheet" type="text/css" href="css/webHeader.css">
 	<link rel="stylesheet" type="text/css" href="css/webBar.css">
 	<link rel="stylesheet" type="text/css" href="css/webContenido.css">
@@ -15,9 +16,9 @@
 	<div id="cabecera">
 		<div class="margen"></div>
 		<ul id="secciones">
-			<li>Inicio</li>
-			<li>Noticias</li>
-			<li>Contactos</li>
+			<li><a href="regreso">Inicio</a></li>
+			<li><a href="">Noticias</a></li>
+			<li><a href="">Contactos</a></li>
 		</ul>
 		<div class="margen"></div>
 	</div>
@@ -39,7 +40,7 @@
 		<a id="salir" href="logout"><img src="imgs/logout.png"/></a>
 	</div>
 
-	<?php echo $__env->yieldContent('barra'); ?>
+	<?php echo $__env->yieldContent('agregarUsuario'); ?>
 
 	<div id="contenido">
 		<?php echo $__env->yieldContent('contenido'); ?>

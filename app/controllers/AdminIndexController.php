@@ -9,7 +9,8 @@ class AdminIndexController extends BaseController
 
 	public function getIndex()
 	{
-		return View::make('home.adminIndex');
+		$usuarios = User::all();
+		return View::make('home.admin.adminIndex')->with('usuarios', $usuarios);
 	}
 
 	public function addUser(){
@@ -39,7 +40,7 @@ class AdminIndexController extends BaseController
 		$validar = Validator::make($inputs, $reglas);
 
 		if ($validar->fails()){
-			return View::make('home.adminIndex')->with('usuarios', $usuarios)->withErrors($validar);
+			return View::make('home.admin.adminIndex')->with('usuarios', $usuarios)->withErrors($validar);
 		}
 		else{
 

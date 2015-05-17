@@ -9,7 +9,7 @@ class UserIndexController extends BaseController
 
 	public function getIndex()
 	{
-		return View::make('home.userIndex');
+		return View::make('home.user.userIndex');
 	}
 }
 ?>

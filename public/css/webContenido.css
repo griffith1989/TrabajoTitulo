@@ -9,21 +9,25 @@
 }
 
 .noticias{
-	background-color: #000;
+	background-color: #004C4C;
 	color: #fff;
 	margin: 10px;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+
 }
 
 .noticias img{
 	width: 400px;
 	height: 200px;
+	border-radius: 10px;
 }
 
 .titular{
-}
-
-.foto{
+	font-size: 25px;
 }
 
 .noticia{
+	text-align: left;
 }

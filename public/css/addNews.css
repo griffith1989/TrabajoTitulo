@@ -1,17 +1,23 @@
-#agregarNoticia{
+#addNews{
 	top: 200px;
 	left: 400px;
 	width: 600px;
 	background-color: #CCF5FF;
 	color: #00CCCC;
 	position: absolute;
-	border: 5px solid #00CCCC;
+	border: solid #00CCCC;
+	border-radius: 10px;
 	padding: 20px;
 }
 
 #cerrarNot{
 	right: 20px;
 	position: absolute;
+	cursor: pointer;
+}
+
+#cerrarNot:hover{
+	color: #FFCC99;
 }
 
 #addNews nav ul li{

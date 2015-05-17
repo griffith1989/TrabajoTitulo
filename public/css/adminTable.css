@@ -18,10 +18,15 @@ td{
 	text-align: center;
 	background-color: #fff;
 	cursor: pointer;
+	color: #00CCCC;
 }
 
 td:hover{
 	color: #FFCC99;
+}
+
+#userTable{
+	margin: 20px;
 }
 
 .colcheck{
@@ -72,7 +77,6 @@ td:hover{
 	cursor: pointer;
 }
 
-#showUser
-:hover{
+#showUser:hover{
 	color: #FFCC99;
 }

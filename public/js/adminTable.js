@@ -81,14 +81,16 @@ $(document).on('ready', function(){
 
         $('#id').toggle(1000);
 
-        $('#id #user').html($('#userTable').find('tr').eq(fila+1).find('td').eq(5).text());
-        $('#id #r_rut').html($('#userTable').find('tr').eq(fila+1).find('td').eq(6).text());
-        $('#id #r_repcod').html($('#userTable').find('tr').eq(fila+1).find('td').eq(7).text());
-        $('#id #r_ncuota').html($('#userTable').find('tr').eq(fila+1).find('td').eq(8).text());
-        $('#id #r_tcuota').html($('#userTable').find('tr').eq(fila+1).find('td').eq(9).text());
-        $('#id #r_campus').html($('#userTable').find('tr').eq(fila+1).find('td').eq(10).text());
-        $('#id #r_rut').html($('#userTable').find('tr').eq(fila+1).find('td').eq(11).text());
-        $('#id #r_descr').html($('#userTable').find('tr').eq(fila+1).find('td').eq(12).text());
+        $('#id #r_foto').attr({
+            src: 'imgs/' + $('#userTable').find('tr').eq(fila+1).find('td').eq(6).html()
+        });
+        $('#id #user').html($('#userTable').find('tr').eq(fila+1).find('td').eq(7).text());
+        $('#id #r_repcod').html($('#userTable').find('tr').eq(fila+1).find('td').eq(8).text());
+        $('#id #r_ncuota').html($('#userTable').find('tr').eq(fila+1).find('td').eq(9).text());
+        $('#id #r_tcuota').html($('#userTable').find('tr').eq(fila+1).find('td').eq(10).text());
+        $('#id #r_campus').html($('#userTable').find('tr').eq(fila+1).find('td').eq(11).text());
+        $('#id #r_rut').html($('#userTable').find('tr').eq(fila+1).find('td').eq(12).text());
+        $('#id #r_descr').html($('#userTable').find('tr').eq(fila+1).find('td').eq(13).text());
     });
 
 

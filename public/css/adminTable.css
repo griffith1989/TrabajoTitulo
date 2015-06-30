@@ -72,6 +72,11 @@ td:hover{
 	text-align: left;
 }
 
+#r_foto{
+	width: 70px;
+  	height: 70px;
+}
+
 #showUser{
 	text-align: right;
 	cursor: pointer;
